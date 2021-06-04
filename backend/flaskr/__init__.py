@@ -1,5 +1,5 @@
 import os
-from flask import Flask, request, abort, jsonify
+from flask import Flask, request, abort, jsonify, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 import random
@@ -39,8 +39,12 @@ def create_app(test_config=None):
     response.headers.add('Access-Control-Allow-Headers', 'Content-Type, Authroization')
     response.headers.add('Access-Copntrol-Allow-Methods', 'GET, POST, PATCH, DELETE, OPTIONS')
     return response
-  '''
 
+  @app.route("/", defaults={'path':''})
+  def serve(path):
+    return send_from_directory(app.static_folder,'index.html')
+
+  '''
   @TODO: 
   Create an endpoint to handle GET requests for questions, 
   including pagination (every 10 questions). 
