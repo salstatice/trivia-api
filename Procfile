@@ -1,1 +1,1 @@
-web: gunicorn backend:flaskr
+web: gunicorn --chdir backend 'flaskr:create_app()'
