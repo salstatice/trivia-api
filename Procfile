@@ -1,2 +1,2 @@
-web: cd frontend && npm install -g serve && serve -s build
+web: cd frontend && npm start
 server: gunicorn --chdir backend flaskr:app
