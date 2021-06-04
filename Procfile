@@ -1,2 +1,1 @@
-web: gunicorn app:flaskr
-webpackdev: npm start
+web: gunicorn app:backend/flaskr
