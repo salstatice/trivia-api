@@ -1,6 +1,7 @@
 import os
 from sqlalchemy import Column, String, Integer, create_engine
 from flask_sqlalchemy import SQLAlchemy
+import sqlalchemy
 from flask_migrate import Migrate
 from flask_moment import Moment
 import json
@@ -13,9 +14,9 @@ setup_db(app)
 '''
 def setup_db(app):
     app.config.from_object('config')
-    db.app = app
+    db = SQLAlchemy(app)
     moment = Moment(app)
-    migrate = Migrate(app.db)
+    migrate = Migrate(app, db)
 
 
 '''
