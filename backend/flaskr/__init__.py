@@ -40,9 +40,9 @@ def create_app(test_config=None):
     response.headers.add('Access-Copntrol-Allow-Methods', 'GET, POST, PATCH, DELETE, OPTIONS')
     return response
 
-  @app.route("/", defaults={'path':''})
-  def serve(path):
-    return send_from_directory(app.static_folder,'index.html')
+  # @app.route("/", defaults={'path':''})
+  # def serve(path):
+  #   return send_from_directory(app.static_folder,'index.html')
 
   '''
   @TODO: 
