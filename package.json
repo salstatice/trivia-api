@@ -1,7 +1,7 @@
 {
     "scripts": {
       "api": "gunicorn --chdir backend flaskr:app",
-      "heroku-postbuild": "cd frontend && npm install && npm run build"
+      "heroku-postbuild": "cd frontend && npm install && npm run build:staging"
     },
     "cacheDirectories": [
       "frontend/node_modules"
