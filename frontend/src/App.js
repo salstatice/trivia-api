@@ -25,7 +25,7 @@ class App extends Component {
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/" exact component={QuestionView} />
-          <Route exact path="/add" component={FormView} />
+          <Route exact path={process.env.PUBLIC_URL + "/add"} component={FormView} />
           <Route exact path="/play" component={QuizView} />
           <Route component={QuestionView} />
         </Switch>

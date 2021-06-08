@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "96b0df750135b985dcfa99fbeafed971",
+    "revision": "6bf1737cdbba5e83f0ffbef0b724324b",
     "url": "/trivia-api/index.html"
   },
   {
-    "revision": "4c00026dc75ae8a0b01a",
+    "revision": "970f5c43cc1e9c8a10be",
     "url": "/trivia-api/static/css/main.e8146a77.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/trivia-api/static/js/2.964071d3.chunk.js"
   },
   {
-    "revision": "4c00026dc75ae8a0b01a",
-    "url": "/trivia-api/static/js/main.3d35ef60.chunk.js"
+    "revision": "970f5c43cc1e9c8a10be",
+    "url": "/trivia-api/static/js/main.ab56b152.chunk.js"
   },
   {
     "revision": "fe1b251ff12844d04db7",

@@ -12,6 +12,7 @@ class Header extends Component {
     if (window.location.origin === "https://salstatice.github.io") {
       window.location.href = window.location.origin + "/trivia-api/#" + uri;
     }
+    console.log("window href", window.location.href)
   }
 
   render() {
