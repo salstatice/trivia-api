@@ -3,6 +3,8 @@ import $ from 'jquery';
 
 import '../stylesheets/FormView.css';
 
+const API_BASE_URL = "test 123"
+
 class FormView extends Component {
   constructor(props){
     super();
@@ -11,13 +13,16 @@ class FormView extends Component {
       answer: "",
       difficulty: 1,
       category: 1,
-      categories: {}
+      categories: {},
+      api_url: "https://trivia-api3000.herokuapp.com",
     }
   }
 
   componentDidMount(){
+    console.log(API_BASE_URL);
+    console.log(this.state.api_url)
     $.ajax({
-      url: `/categories`, //TODO: update request URL
+      url: `${this.state.api_url}/categories`, //TODO: update request URL
       type: "GET",
       success: (result) => {
         this.setState({ categories: result.categories })
@@ -34,7 +39,7 @@ class FormView extends Component {
   submitQuestion = (event) => {
     event.preventDefault();
     $.ajax({
-      url: '/questions', //TODO: update request URL
+      url: `${this.state.api_url}/questions`, //TODO: update request URL
       type: "POST",
       dataType: 'json',
       contentType: 'application/json',
