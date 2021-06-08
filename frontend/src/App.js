@@ -12,6 +12,8 @@ import QuestionView from './components/QuestionView';
 import Header from './components/Header';
 import QuizView from './components/QuizView';
 
+console.log("Host", process.env.HOST)
+console.log("API_URL", process.env.API_URL)
 
 class App extends Component {
   render() {
