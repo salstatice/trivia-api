@@ -15,18 +15,14 @@ import QuizView from './components/QuizView';
 
 class App extends Component {
   render() {
-    //debugger
-    console.log("testing")
-    console.log(process.env.PUBLIC_URL)
-
     return (
     <div className="App">
       <Header path />
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/" exact component={QuestionView} />
-          <Route exact path={process.env.PUBLIC_URL + "/add"} component={FormView} />
-          <Route exact path="/play" component={QuizView} />
+          <Route path="/add" component={FormView} />
+          <Route path="/play" component={QuizView} />
           <Route component={QuestionView} />
         </Switch>
       </Router>
