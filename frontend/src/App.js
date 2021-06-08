@@ -12,6 +12,8 @@ import QuestionView from './components/QuestionView';
 import Header from './components/Header';
 import QuizView from './components/QuizView';
 
+console.log("testing")
+console.log(process.env.PUBLIC_URL)
 
 class App extends Component {
   render() {
