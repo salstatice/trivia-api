@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "https://trivia-api3000.herokuapp.com/",
+  "homepage": "https://salstatice.github.io/trivia-api",
   "dependencies": {
     "corsproxy": "^1.5.0",
+    "gh-pages": "^3.2.0",
     "jquery": "^3.4.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -13,6 +15,8 @@
   },
   "scripts": {
     "start": "node node_modules/react-scripts/scripts/start.js",
+    "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
