@@ -12,11 +12,14 @@ import QuestionView from './components/QuestionView';
 import Header from './components/Header';
 import QuizView from './components/QuizView';
 
-console.log("Host", process.env.HOST)
-console.log("API_URL", process.env.API_URL)
 
 class App extends Component {
   render() {
+    //debugger
+    console.log("Host", process.env.HOST);
+    console.log("API_URL", process.env.API_URL);
+    console.log(process.env.PUBLIC_URL)
+
     return (
     <div className="App">
       <Header path />
