@@ -7,7 +7,8 @@ import '../stylesheets/Header.css';
 class Header extends Component {
 
   navTo(uri){
-    window.location.href = window.location.origin + uri;
+    console.log(window.location.origin)
+    window.location.href = window.location.origin + "/#" + uri;
     if (window.location.origin === "https://salstatice.github.io") {
       window.location.href = window.location.origin + "/trivia-api/#" + uri;
     }
@@ -19,7 +20,7 @@ class Header extends Component {
         <img src={logo} alt="" />
         <h1 onClick={() => {this.navTo('')}}>Udacitrivia</h1>
         <h2 onClick={() => {this.navTo('')}}>List</h2>
-        <h2 onClick={() => {this.navTo('/add')}}>Hash</h2>
+        <h2 onClick={() => {this.navTo('/add')}}>Add</h2>
         <h2 onClick={() => {this.navTo('/play')}}>Play</h2>
       </div>
     );
