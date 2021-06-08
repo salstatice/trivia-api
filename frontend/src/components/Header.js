@@ -8,6 +8,9 @@ class Header extends Component {
 
   navTo(uri){
     window.location.href = window.location.origin + uri;
+    if (window.location.orgin == "https://salstatice.github.io/") {
+      window.location.href = window.location.origin + "trivia-api/" + uri;
+    }
   }
 
   render() {
@@ -16,7 +19,7 @@ class Header extends Component {
         <img src={logo} alt="" />
         <h1 onClick={() => {this.navTo('')}}>Udacitrivia</h1>
         <h2 onClick={() => {this.navTo('')}}>List</h2>
-        <h2 onClick={() => {this.navTo('/add')}}>FUN</h2>
+        <h2 onClick={() => {this.navTo('/add')}}>ADD</h2>
         <h2 onClick={() => {this.navTo('/play')}}>Play</h2>
       </div>
     );
