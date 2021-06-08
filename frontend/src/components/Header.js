@@ -8,7 +8,7 @@ class Header extends Component {
 
   navTo(uri){
     window.location.href = window.location.origin + uri;
-    if (window.location.orgin == "https://salstatice.github.io/") {
+    if (window.location.origin == "https://salstatice.github.io/") {
       window.location.href = window.location.origin + "trivia-api/" + uri;
     }
   }
