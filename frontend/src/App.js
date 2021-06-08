@@ -22,7 +22,7 @@ class App extends Component {
     return (
     <div className="App">
       <Header path />
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Switch>
           <Route path="/" exact component={QuestionView} />
           <Route exact path="/add" component={FormView} />
