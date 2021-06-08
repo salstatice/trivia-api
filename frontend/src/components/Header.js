@@ -7,7 +7,7 @@ import '../stylesheets/Header.css';
 class Header extends Component {
 
   navTo(uri){
-    console.log(window.location.origin)
+    console.log("window orgin", window.location.origin)
     window.location.href = window.location.origin + "/#" + uri;
     if (window.location.origin === "https://salstatice.github.io") {
       window.location.href = window.location.origin + "/trivia-api/#" + uri;
