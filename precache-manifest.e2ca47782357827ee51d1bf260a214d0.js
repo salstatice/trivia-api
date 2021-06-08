@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "74a7ca5d20c69b31c02eade21a46d619",
+    "revision": "efe157d5bcd914a976c8f7010d11829b",
     "url": "/trivia-api/index.html"
   },
   {
