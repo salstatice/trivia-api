@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/trivia-api/static/css/main.e8146a77.chunk.css",
-    "main.js": "/trivia-api/static/js/main.ec8537f3.chunk.js",
-    "main.js.map": "/trivia-api/static/js/main.ec8537f3.chunk.js.map",
+    "main.js": "/trivia-api/static/js/main.a8be2512.chunk.js",
+    "main.js.map": "/trivia-api/static/js/main.a8be2512.chunk.js.map",
     "runtime~main.js": "/trivia-api/static/js/runtime~main.10457ea7.js",
     "runtime~main.js.map": "/trivia-api/static/js/runtime~main.10457ea7.js.map",
-    "static/js/2.45e9a059.chunk.js": "/trivia-api/static/js/2.45e9a059.chunk.js",
-    "static/js/2.45e9a059.chunk.js.map": "/trivia-api/static/js/2.45e9a059.chunk.js.map",
+    "static/js/2.118ff8a2.chunk.js": "/trivia-api/static/js/2.118ff8a2.chunk.js",
+    "static/js/2.118ff8a2.chunk.js.map": "/trivia-api/static/js/2.118ff8a2.chunk.js.map",
     "index.html": "/trivia-api/index.html",
-    "precache-manifest.8e095a5491bc51f14a202af3e02664a4.js": "/trivia-api/precache-manifest.8e095a5491bc51f14a202af3e02664a4.js",
+    "precache-manifest.44d87ca206eddf0f491eba7eeed0b299.js": "/trivia-api/precache-manifest.44d87ca206eddf0f491eba7eeed0b299.js",
     "service-worker.js": "/trivia-api/service-worker.js",
     "static/css/main.e8146a77.chunk.css.map": "/trivia-api/static/css/main.e8146a77.chunk.css.map",
     "static/media/logo.svg": "/trivia-api/static/media/logo.ee7cd8ed.svg"
