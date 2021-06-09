@@ -14,7 +14,7 @@ class QuestionView extends Component {
       totalQuestions: 0,
       categories: {},
       currentCategory: null,
-      api_url: "https://trivia-api3000.herokuapp.com",
+      api_url: "",
     }
   }
 

@@ -14,7 +14,7 @@ class FormView extends Component {
       difficulty: 1,
       category: 1,
       categories: {},
-      api_url: "https://trivia-api3000.herokuapp.com",
+      api_url: "",
     }
   }
 

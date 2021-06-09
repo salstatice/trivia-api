@@ -17,7 +17,7 @@ class QuizView extends Component {
         currentQuestion: {},
         guess: '',
         forceEnd: false,
-        api_url: "https://trivia-api3000.herokuapp.com",
+        api_url: "",
     }
   }
 
