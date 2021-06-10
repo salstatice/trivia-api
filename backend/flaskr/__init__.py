@@ -1,5 +1,5 @@
 import os
-from flask import Flask, request, abort, jsonify
+from flask import Flask, request, abort, jsonify,
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 import random
@@ -21,7 +21,7 @@ def paginate_questions(request, selection):
 
 def create_app(test_config=None):
   # create and configure the app
-  app = Flask(__name__, static_folder='../build', static_url_path='/')
+  app = Flask(__name__, static_folder='../../build', static_url_path='/')
   setup_db(app)
   
   '''
@@ -42,7 +42,7 @@ def create_app(test_config=None):
 
   @app.route('/')
   def index():
-    return "index page here"
+    return app.send_static_file('index.html')
   
   '''
   @TODO: 
