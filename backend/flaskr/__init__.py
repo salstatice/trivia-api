@@ -21,7 +21,7 @@ def paginate_questions(request, selection):
 
 def create_app(test_config=None):
   # create and configure the app
-  app = Flask(__name__, static_folder='../../build', static_url_path='/')
+  app = Flask(__name__, static_folder='../../build', static_url_path='.')
   setup_db(app)
   
   '''
