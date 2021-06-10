@@ -39,7 +39,8 @@ def create_app(test_config=None):
     response.headers.add('Access-Control-Allow-Headers', 'Content-Type, Authroization')
     response.headers.add('Access-Copntrol-Allow-Methods', 'GET, POST, PATCH, DELETE, OPTIONS')
     return response
-
+  
+  # static index page
   @app.route('/')
   def index():
     return app.send_static_file('index.html')
