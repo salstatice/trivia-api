@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../stylesheets/Question.css';
+import '../../public/art.svg';
 
 class Question extends Component {
   constructor(){
