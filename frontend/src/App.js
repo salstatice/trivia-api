@@ -15,13 +15,6 @@ import QuizView from './components/QuizView';
 
 class App extends Component {
   render() {
-
-    //debugger
-    console.log("HOST", process.env.HOST)
-    console.log("API_URL", process.env.API_URL)
-
-    const API_BASE_URL = "testfromapp";
-
     return (
     <div className="App">
       <Header path />

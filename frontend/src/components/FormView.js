@@ -3,7 +3,6 @@ import $ from 'jquery';
 
 import '../stylesheets/FormView.css';
 
-const API_BASE_URL = "test 123"
 
 class FormView extends Component {
   constructor(props){
@@ -19,8 +18,6 @@ class FormView extends Component {
   }
 
   componentDidMount(){
-    console.log(API_BASE_URL);
-    console.log(this.state.api_url)
     $.ajax({
       url: `${this.state.api_url}/categories`, //TODO: update request URL
       type: "GET",
