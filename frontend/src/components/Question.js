@@ -16,7 +16,7 @@ class Question extends Component {
 
   render() {
     const { question, answer, category, difficulty } = this.props;
-    const categoryLC = category.toLowercase()
+    const categoryLC = categorytoString().toLowercase()
     return (
       <div className="Question-holder">
         <div className="Question">{question}</div>
