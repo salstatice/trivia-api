@@ -19,12 +19,12 @@ class Question extends Component {
     const { question, answer, category, difficulty } = this.props;
     console.log('category', category)
     console.log('category type', typeof(category))
-    // const categoryLC = categorytoString().toLowercase()
+    const categoryLC = category.toLowerCase()
     return (
       <div className="Question-holder">
         <div className="Question">{question}</div>
         <div className="Question-status">
-          <img className="category" src={`${category}.svg`} alt={category} />
+          <img className="category" src={`${categoryLC}.svg`} alt={category} />
           <div className="difficulty">Difficulty: {difficulty}</div>
           <img src="delete.png" className="delete" onClick={() => this.props.questionAction('DELETE')} alt="delete" />
           
