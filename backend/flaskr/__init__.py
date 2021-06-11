@@ -136,6 +136,10 @@ def create_app(test_config=None):
         'current_category': category_id
       })
     except Exception as e:
+      # debugger
+      print('error log')
+      print(e)
+
       if e.code == 404:
         abort(404)
       else:
