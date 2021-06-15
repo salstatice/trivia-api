@@ -1,5 +1,7 @@
 # Full Stack API Final Project
-https://trivia-api3000.herokuapp.com/
+This project is for Udacity Full Stack Web Developer Nanodegree.
+
+Link to project: https://trivia-api3000.herokuapp.com/
 
 ## Full Stack Trivia
 
